@@ -1,10 +1,3 @@
-// 効果音
-
-function playSound(src) {
-   const audio = new Audio(src);
-   audio.play();
-}
-
 function updateTurnDisplay() {
    document.getElementById("turn-info").textContent = getTurnSymbol(currentTurn) + " のターンです";
 }
