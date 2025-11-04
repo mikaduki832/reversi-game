@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reversi</title>
+    <link rel="icon" href="favicon/オセロアイコン1.png">
+    <link rel="stylesheet" href="ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/game.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/event.js" defer></script>
+</head>
+
+<body>
+    <div id="menu-screen" style="display: none;">
+        <div class="index">
+            <div class="backButton">
+                <div id="back"></div>
+                <div class="close">閉じる</div>
+            </div>
+        </div>
+        <button id="reset-button">リセット</button>
+        <a href="./cpu/cpu.html" alt="CPUと対戦する">
+            <button id="cpu">CPUと対戦する</button>
+        </a>
+    </div>
+
+    <div class="left">
+        <div class="score">
+            <div class="black-label">⚫</div>
+            <div id="black-score">2</div>
+            <div class="black-name">プレイヤー1</div>
+            <div id="black-turn">先手</div>
+        </div>
+    </div>
+
+    <div class="center">
+        <div id="indicator">2人プレイ</div>
+        <table id="board"></table>
+        <div id="turn-info"><span>⚫ のターンです</span></div>
+    </div>
+
+    <div class="left">
+        <div class="score">
+            <div class="white-label">⚪</div>
+            <div id="white-score">2</div>
+            <div class="white-name">プレイヤー2</div>
+            <div id="white-turn">後手</div>
+        </div>
+    </div>
+
+    <div class="btn">
+        <div id="menu">メニュー</div>
+    </div>
+</body>
+
+</html>
